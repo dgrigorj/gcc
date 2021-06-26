@@ -2645,6 +2645,8 @@ arc64_reorg (void)
       op1 = SET_SRC (tmp);
       if (REGNO (op1) != R58_REGNUM)
 	continue;
+      if (GET_MODE (op0) != mode)
+	continue;
 
       /* Make the new MAC instruction.  */
       switch (INSN_CODE (insn))
