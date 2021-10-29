@@ -1635,6 +1635,7 @@ arc64_print_operand (FILE *file, rtx x, int code)
 	  fputc (']', file);
 	  break;
 
+	case CONST:
 	case LABEL_REF:
 	case SYMBOL_REF:
 	case UNSPEC:
